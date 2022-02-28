@@ -1,21 +1,20 @@
 {
   "name": "book-api",
   "version": "1.0.0",
-  "description": "A Book Restful API demo: Secure Restful API with Nodejs, and Mongoose",
+  "description": "A Book Restful API Demo Secure Restful API with Nodejs, and Mongoose",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js --exec babel-node --presets env",
+    "dev": "nodemon src/app.js --exec babel-node --presets env",
     "build": "babel src -d dist --source-maps inline --copy-files",
-    "serve": "node dist/app.js"
+    "heroku-postbuild": "npm install",
+    "start": "babel-node src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "compression": "^1.7.4",
     "express": "^4.16.3",
-    "helmet": "^5.0.2",
     "joi": "^13.3.0",
     "jsonwebtoken": "^8.2.2",
     "mongoose": "^5.1.3",
@@ -26,7 +25,6 @@
     "swagger-ui-express": "^3.0.9"
   },
   "devDependencies": {
-    "@types/joi": "^17.2.3",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
