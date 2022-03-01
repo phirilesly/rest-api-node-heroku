@@ -7,7 +7,7 @@
         "url": "https://opensource.org/licenses/MIT"
       },
       "version": "1.0.0",
-      "host": "https://tranquil-cove-64788.herokuapp.com/",
+      "host": "tranquil-cove-64788.herokuapp.com/",
       "basePath": "/api",
       "tags": [
         {
